@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+
+:root {
+--Saffron: #E8C547;
+--Jet: #30323D;    /*Primary Font Color*/
+--Davys-Gray: #4D5061;    /*Secondary Font Color*/
+--Glaucous: #5C80BC;
+--Platinum: #E6E6E6;    /*Background*/
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Platinum);
+    font-family: "Plaster";
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vmin;
+    background-color: var(--Saffron);
+    box-shadow: 0 4px 2px 0px rgba(0, 0, 0, 0.3)
+}
+
+.link-container {
+    width: 60vmin;
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 3vmin;
+    font-weight: bold;
+    position: relative;
+    color: var(--Glaucous);
+}
+
+.link::after{
+    content: "";
+    background-color: var(--Glaucous);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: 0.2s;
+}
+
+.link:hover,
+.link:focus{
+    color: var(--Davys-Gray);
+}
+
+.link:hover::after,
+.link:focus::after{
+    background-color: var(--Platinum);
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    margin: 6vmin 6vmin 0vmin 6vmin;
+    animation: fade_in 1s ease-in-out;
+}
+
+.c3-logo{
+    width: 12vmin;
+    margin-right: 2vmin;
+}
+
+.title{
+    font-size: 12vmin;
+    letter-spacing: 2vmin;
+    color: var(--Davys-Gray);
+}
+
+.author-name{
+    font-size: 4min;
+    font-weight: bold;
+    color: var(--Jet);
+    animation: fade_in 1s ease-in;
+}
+
+.question-container{
+    margin: 5vmin;
+    border: var(--Saffron) 3px solid;
+    border-radius: 20px;
+    padding-top: 2vmin;
+    background-color: var(--Glaucous)
+}
+
+.question-box{
+    margin:  0 3vmin 3vmin 3vmin;
+    width: 100vmin;
+}
+
+.question{
+    font-size: 4vmin;
+    color: var(--Jet);
+}
+
+.answer{
+    margin: 3vmin 3vmin 3vmin 0;
+    font-size: 2vmin;
+    color: var(--Davys-Gray);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 12vmin;
+    background-color: var(--Saffron);
+}
+
+h3{
+    font-size: 1.5vmin;
+    margin-top: 2vmin;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vmin;
+}
+
+.project{
+    margin: 2vmin;
+}
+
+.project-title{
+    color: var(--Glaucous);
+    font-size: 7vmin;
+    letter-spacing: 10px;
+}
+
+.project-description{
+    font-size: 3vmin;
+    margin: 2vmin 2vmin 2vmin 0;
+    color: var(--Davys-Gray);
+}
+.game-img{
+    width: 80vmin;
+    height: 40vmin;
+}
+.about-container{
+    flex-direction: column;
+    align-items: center;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vmin;
+}
+
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}

@@ -1,0 +1,26 @@
+When was Construct 3 made?
+- Construct 3 was relased in January 27, 2015
+
+Who made Construct 3?
+- Construct 3 was made by Scirra Ltd
+
+What is Construct 3?
+- Construct 3 is a Game Making Software that allows you to make your own games and apps
+
+What are some popular games made in Construct 3?
+
+1. There Is No Game
+
+2. Tag
+
+3. Tricky Ball
+
+4. BlockTanks.io
+
+5. Light It Up
+
+What is one game you made in Construct 3, when did you make it, and where?
+- I made a Maze Game here in iCode
+
+What game would you like to make in Construct 3 and why?
+- I would like to make a keyboard rhythm game (Kind of like Osu!Mania)
